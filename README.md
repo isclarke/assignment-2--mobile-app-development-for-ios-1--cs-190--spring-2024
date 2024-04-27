@@ -1,4 +1,4 @@
-# Spring 2024 Mobile Application Development for iOS I — Assignment 2
+# Spring 2024 Mobile Application Development for iOS I — Assignment 3
 
 * **Read these instructions repeatedly until you understand, then begin your project. If something is not clear, ask.**
 
@@ -13,7 +13,7 @@
 
 ## ❖ Introduction ❖
 
-For this assignment, you’ll be combining the solution to assignment 1 with what you’ve learned in the `QuestionBot` and `BouncyBall` apps. Via an iPhone app, the user should be presented with a prompt to enter the size of the diamond, which you’ll draw using `Points`, not asterisk characters, in an app’s `UIView`. Your program should print a diamond shape that doesn’t exceed the safe space of your phone’s view. Your program need only work in portrait.
+For this assignment, you’ll be completing the entire `BouncyBall App` from `Unit 3: Organizing Data | Build`, complete with physics and barriers used to deflect the ball ejected from the funnel.
 
 ---
 
@@ -30,7 +30,7 @@ For this assignment, you’ll be combining the solution to assignment 1 with wha
 
 ## ❖ Due ❖
 
-Wednesday, 24 April 2024, at 3:30 PM.
+Thursday, 2 May 2024, at 5:00 PM.
 
 ---
 

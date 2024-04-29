@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mobileappdevassingment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isY-V9-cbh" userLabel="drawButton">
+                                <rect key="frame" x="170.5" y="195" width="73" height="35"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="DRAW"/>
+                                <connections>
+                                    <action selector="drawButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYz-eL-EzG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Diamond Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biP-Ww-ddo">
+                                <rect key="frame" x="140" y="73" width="134" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfe-yw-8DD" userLabel="diamondHome">
+                                <rect key="frame" x="20" y="269" width="374" height="593"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="593" id="tcb-dw-uTb"/>
+                                </constraints>
+                            </skView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="enter number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SyV-ie-SIH" userLabel="numberField">
+                                <rect key="frame" x="150" y="99" width="115" height="28.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SyV-ie-SIH" firstAttribute="top" secondItem="biP-Ww-ddo" secondAttribute="bottom" constant="8" id="7U1-Rd-qJm"/>
+                            <constraint firstItem="mfe-yw-8DD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9tT-1P-k0c"/>
+                            <constraint firstItem="biP-Ww-ddo" firstAttribute="centerX" secondItem="SyV-ie-SIH" secondAttribute="centerX" id="HfS-St-4JF"/>
+                            <constraint firstItem="biP-Ww-ddo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OGI-2v-9pg"/>
+                            <constraint firstItem="mfe-yw-8DD" firstAttribute="top" secondItem="isY-V9-cbh" secondAttribute="bottom" constant="39" id="iC6-Jv-EXV"/>
+                            <constraint firstItem="SyV-ie-SIH" firstAttribute="centerX" secondItem="mfe-yw-8DD" secondAttribute="centerX" id="nI4-AS-HnF"/>
+                            <constraint firstItem="mfe-yw-8DD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qCN-KM-97i"/>
+                            <constraint firstItem="isY-V9-cbh" firstAttribute="centerX" secondItem="SyV-ie-SIH" secondAttribute="centerX" id="rop-NA-FaI"/>
+                            <constraint firstItem="biP-Ww-ddo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="sa2-xI-1lE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diamondHome" destination="mfe-yw-8DD" id="oLB-S3-WSD"/>
+                        <outlet property="drawButton" destination="isY-V9-cbh" id="1AZ-9O-zwU"/>
+                        <outlet property="numberField" destination="SyV-ie-SIH" id="PbP-7M-xfd"/>
+                        <outlet property="topLabel" destination="biP-Ww-ddo" id="EJU-a1-yNG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.275362318840585" y="-36.160714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
